@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
+// import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -25,6 +25,7 @@ class FirstScreen extends StatelessWidget {
                       AssetImage("assets/images/Bell.png"))),
               const SizedBox(
                 width: 10,
+                
               ),
               IconButton(
                 onPressed: () {},
@@ -76,7 +77,7 @@ class FirstScreen extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xff0b2265)),
+                  color:const  Color(0xff0b2265)),
               height: 54,
               width: 366,
               alignment: Alignment.center,
@@ -201,7 +202,7 @@ class FirstScreen extends StatelessWidget {
                                 ))
                           ],
                         ),
-                        SizedBox(
+                       const  SizedBox(
                           height: 10,
                         ),
                         const Text("Schedules for the day",
@@ -298,7 +299,7 @@ class FirstScreen extends StatelessWidget {
                                 ))
                           ],
                         ),
-                        SizedBox(
+                      const   SizedBox(
                           height: 10,
                         ),
                         const Text("Completed this Week",
@@ -354,7 +355,7 @@ class FirstScreen extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                              margin:const  EdgeInsets.fromLTRB(50, 0, 0, 0),
                               child: const Text("Last Month",
                                   style: TextStyle(
                                     color: Color.fromRGBO(102, 102, 102, 1),
@@ -410,7 +411,7 @@ class FirstScreen extends StatelessWidget {
                     ),
                     Container(
                       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                      child: Text("Orders Raised",
+                      child:const  Text("Orders Raised",
                           style: TextStyle(
                             color: Color.fromRGBO(102, 102, 102, 1),
                             fontSize: 12,
@@ -426,8 +427,8 @@ class FirstScreen extends StatelessWidget {
               children: [
                 Container(
                   alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.only(left: 15),
-                  child: Text(
+                  margin:const  EdgeInsets.only(left: 15),
+                  child:const  Text(
                     "Upcoming Schedule",
                     style: TextStyle(
                       fontSize: 16,
@@ -436,8 +437,8 @@ class FirstScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 163),
-                  child: Text("View all",
+                  margin:const  EdgeInsets.only(left: 163),
+                  child:const  Text("View all",
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                         decorationColor: Color.fromRGBO(5, 76, 184, 1),
@@ -448,7 +449,7 @@ class FirstScreen extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+           const  SizedBox(
               height: 8,
             ),
             //upcoming sheduled  section
@@ -463,8 +464,8 @@ class FirstScreen extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 12),
-                    child: Text("Route - OMMR25614",
+                    margin:const  EdgeInsets.only(left: 12),
+                    child: const Text("Route - OMMR25614",
                         style: TextStyle(
                           color: Color.fromRGBO(218, 41, 28, 1),
                           fontSize: 16,
@@ -472,8 +473,8 @@ class FirstScreen extends StatelessWidget {
                         )),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 70),
-                    child: Text(
+                    margin:const  EdgeInsets.only(left: 70),
+                    child:const Text(
                       "Start Journey",
                       style: TextStyle(
                         color: Color.fromRGBO(11, 34, 101, 1),
@@ -510,14 +511,14 @@ class FirstScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                            margin: EdgeInsets.fromLTRB(10, 16, 0, 0),
+                            margin:const EdgeInsets.fromLTRB(10, 16, 0, 0),
                             child: Image.asset('assets/images/clock.png')),
-                        SizedBox(
+                       const SizedBox(
                           width: 8,
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(0, 16, 0, 12),
-                          child: Text(
+                          margin:const EdgeInsets.fromLTRB(0, 16, 0, 12),
+                          child: const Text(
                             "06:20 AM - 8:35 AM",
                             style: TextStyle(
                               fontSize: 14,
@@ -526,15 +527,15 @@ class FirstScreen extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(80, 16, 8, 12),
-                          child: Text("12 Students",
+                          margin:const EdgeInsets.fromLTRB(80, 16, 8, 12),
+                          child:const Text("12 Students",
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               )),
                         ),
                         Container(
-                            margin: EdgeInsets.only(top: 16),
+                            margin: const EdgeInsets.only(top: 16),
                             child: Image.asset('assets/images/community.png')),
                       ],
                     ),
@@ -542,10 +543,10 @@ class FirstScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          margin: EdgeInsets.fromLTRB(10, 0, 8, 20),
+                          margin: const EdgeInsets.fromLTRB(10, 0, 8, 20),
                           child: Image.asset('assets/images/map.png'),
                         ),
-                        Text(
+                        const Text(
                           "9 Stops | 60 Miles",
                           style: TextStyle(
                             fontSize: 14,
@@ -553,8 +554,8 @@ class FirstScreen extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.fromLTRB(105, 0, 8, 0),
-                          child: Text("Cincinnati",
+                          margin:const  EdgeInsets.fromLTRB(105, 0, 8, 0),
+                          child:const Text("Cincinnati",
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
@@ -568,7 +569,7 @@ class FirstScreen extends StatelessWidget {
               ),
             ),
         
-           SizedBox(height: 26,) //experimental code ends
+           const SizedBox(height: 26,) //experimental code ends
           ],
         ),
         
